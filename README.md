@@ -69,6 +69,12 @@ Anyone with access to internet who wants to see recent data regarding the virus.
 
 
 5 functional/stateless (Presentational component)
+>button onClick function for submitting form on homepage and renders a modal thanking them and clicking the X to clear modal renders them to information page 
+
+>button onSubmit function for when on 
+
+
+
 
 
 

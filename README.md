@@ -75,7 +75,9 @@ Anyone with access to internet who wants to see recent data regarding the virus.
 
 >function that pulls data no matter what country is being searched; should contain/show the same information of Country with NewConfirmed, TotalConfirmed, NewDeaths, TotalDeaths, NewRecovered, and TotalRecovered.
 
->function that 
+>function that populates this data cleanly to user 
+
+
 
 
 

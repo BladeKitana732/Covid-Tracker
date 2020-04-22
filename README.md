@@ -77,7 +77,9 @@ Anyone with access to internet who wants to see recent data regarding the virus.
 
 >function that populates this data cleanly to user 
 
+> function that populates image of current country that user is currently looking up in information page
 
+![wireframe](./WF1.jpg)
 
 
 

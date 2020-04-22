@@ -30,20 +30,20 @@ App renders in browser
 
 On project submission there should be 0 console.log() statements seen in the browser
 
-Be written with kebab-case CSS class names (e.g. this-is-the-class-name)
+Be written with kebab-case CSS class names (e.g. this-is-the-class-name) //simply replacing spaces with dashes; resource(s): https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841
 
 Be written with semantic, camelCase JavaScript variable names
 pseudocode file in root of project repository
 
-Has readme.md file at the root of repository
+Has readme.md file at the root of repository - Completed 
 
-readme file clearly documents the purpose of the project as a problem statement
+readme file clearly documents the purpose of the project as a problem statement - Completed
 
-readme file clearly documents the target end user for this program.
+readme file clearly documents the target end user for this program. - Completed 
 
-readme file has embedded link (not url) to publicly deployed app
+readme file has embedded link (not url) to publicly deployed app - Completed 
 
-Using a 3rd party api
+Using a 3rd party api - Completed
 
 ## Propsal: COVID-19 info tracker 
 

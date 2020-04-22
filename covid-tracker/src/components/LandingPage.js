@@ -15,7 +15,7 @@ export default class LandingPage extends Component {
         axios.get(api)
     
     .then((result) => {
-        const initialSubmit = result.data;
+        const initialSubmit = result.data.Countries[235];
 
         console.log('Country default is', initialSubmit)
 

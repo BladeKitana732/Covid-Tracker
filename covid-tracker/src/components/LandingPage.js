@@ -1,7 +1,52 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import axios from 'axios';
+
 
 
 export default class LandingPage extends Component {
+
+    state = {
+        country: ""
+    }
+
+    componentDidMount() {
+        const api = "https://api.covid19api.com/summary";
+
+        axios.get(api)
+    
+    .then((result) => {
+        const initialSubmit = result.data.country;
+
+        console.log('Country default is', initialSubmit)
+
+        this.setState({
+            country: initialSubmit
+        })
+        
+    })
+    
+    .catch((err) => {
+
+        console.log('Error has been computed', err)
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+
     render() {
         return (
             <div>

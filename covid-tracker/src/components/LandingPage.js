@@ -12,6 +12,7 @@ export default class LandingPage extends Component {
     componentDidMount() {
         const api = "https://api.covid19api.com/summary";
 
+        //need to link this get request to drop down menu submission to render user to information page based on home country they selected in form. 
         axios.get(api)
     
     .then((result) => {

@@ -8,7 +8,7 @@ Project code is pushed to a public Git repository
 
 The code should be written in ES6 as much as possible
 
-Use the create-react-app generator to start your project.
+Use the create-react-app generator to start your project. - Completed 
 
 There should be 2 container components (stateful)
 
@@ -69,9 +69,13 @@ Anyone with access to internet who wants to see recent data regarding the virus.
 
 
 5 functional/stateless (Presentational component)
->button onClick function for submitting form on homepage and renders a modal thanking them and clicking the X to clear modal renders them to information page 
+>button onSubmit function for submitting form on homepage and renders a modal thanking them and clicking the X to clear modal renders them to information page 
 
->button onSubmit function for when on 
+>modal for first bullet point 
+
+>function that pulls data no matter what country is being searched; should contain/show the same information of Country with NewConfirmed, TotalConfirmed, NewDeaths, TotalDeaths, NewRecovered, and TotalRecovered.
+
+>function that 
 
 
 

@@ -47,6 +47,30 @@ Using a 3rd party api
 
 ## Propsal: COVID-19 info tracker 
 
-API being used: https://api.covid19api.com/summary
+#### API being used: 
+
+https://api.covid19api.com/summary (found from google. https://covid19api.com/#details )
+> Has global and breaks down by country as well. 
+
+#### Problem statement (what are you solving with this app?)
+
+This app will solve in ensuring people are up-to-date by country they search (solving to make it easier for users to find current numbers in cases)
+
+#### Target Users (audience?)
+
+Anyone with access to internet who wants to see recent data regarding the virus. 
+
+#### WireFrame 
+
+2 stateful (class components)
+>Form to input their name, birthday, email, and home country/rendered to information searching page
+
+>Parent class with state of different info that can be pulled from api:  Global object or to go by Countries array with nested objects w/ Country, CountryCode, Slug, NewConfirmed, TotalConfirmed, NewDeaths, TotalDeaths, NewRecovered, TotalRecovered, and Date.
+
+
+5 functional/stateless (Presentational component)
+
+
+
 
 

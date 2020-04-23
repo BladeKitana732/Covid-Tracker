@@ -53,7 +53,7 @@ export default class LandingPage extends Component {
 
     handleName = (event) => {
       event.preventDefault();
-      console.log('State name has been updated')
+      console.log(event.target.value);
     }
 
 

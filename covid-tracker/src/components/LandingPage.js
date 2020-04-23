@@ -5,10 +5,7 @@ const api = "https://api.covid19api.com/summary"
 
 export default class LandingPage extends Component {
   
-    
-
-
-
+  
     constructor(props) {
         super(props);
 
@@ -18,7 +15,7 @@ export default class LandingPage extends Component {
               name: "",
               birthday: "",
               email: "",
-              country: "",
+              country: [],
 
           }
         
@@ -93,7 +90,7 @@ export default class LandingPage extends Component {
       axios.get(api)
 
       .then((result) => {
-          const countryDisplay = result.data.Countries[200];
+          let countryDisplay = result.data.Countries;
 
           console.log('Country info displayed: ', countryDisplay)
 
@@ -131,10 +128,7 @@ export default class LandingPage extends Component {
                   {/* Drop down list of countries to select from here-- Completed*/}
                   <p>Select Home Country:
                   <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                    { this.state.country.map(Country => <option value={Country.value}></option>)}
                   </select>
                   </p>
 

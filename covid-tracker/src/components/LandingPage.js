@@ -14,7 +14,7 @@ export default class LandingPage extends Component {
         super(props);
         
         const api = "https://api.covid19api.com/summary"
-         // this .get method will always pull from api url from wineLink variable and the parameter of ('/') to reference the main path (main API url information)
+        
          axios.get(api)
 
          .then((result) => {

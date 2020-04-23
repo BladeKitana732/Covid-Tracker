@@ -8,17 +8,20 @@ export default class LandingPage extends Component {
     
 
 
-   state = {
-
-        country: "",
-        modalStatus: false //added for when user clicks submit it will turn to true
-
-    }
 
     constructor(props) {
         super(props);
 
 
+          this.state = {
+
+              name: "",
+              birthday: "",
+              email: "",
+              country: "",
+              modalStatus: false //added for when user clicks submit it will turn to true
+
+          }
         
        
         
@@ -45,7 +48,12 @@ export default class LandingPage extends Component {
     handleSubmit = (event) => {
       event.preventDefault();
       console.log('Form has been handled!');
-      
+
+    }
+
+    handleName = (event) => {
+      event.preventDefault();
+      console.log('State name has been updated')
     }
 
 
@@ -80,17 +88,17 @@ export default class LandingPage extends Component {
                 <form onSubmit= {this.handleSubmit}>
                   <label>
                     Name:
-                    <input type="text" name="name" />
+                    <input onChange= {this.handleName} type="text" name="name" value={this.state.name}/>
                   </label>
 
                   <label>
                     Birthday:
-                    <input type="text" birthday="birthday" />
+                    <input type="text" birthday="birthday" value={this.state.birthday} />
                   </label>
 
                   <label>
                     Email:
-                    <input type="text" email="email" />
+                    <input type="text" email="email" value={this.state.email}/>
                   </label>
 
                   {/* Drop down list of countries to select from here-- Completed*/}

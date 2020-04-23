@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
-const api = "https://api.covid19api.com/summary"
+// const api = "https://api.covid19api.com/summary"
 
 export default class LandingPage extends Component {
   
@@ -15,7 +15,7 @@ export default class LandingPage extends Component {
               name: "",
               birthday: "",
               email: "",
-              country: [],
+              countryName: [],
 
           }
         
@@ -85,20 +85,30 @@ export default class LandingPage extends Component {
 
 
     componentDidMount() {
- 
+      
+      fetch("https://api.covid19api.com/summary")
+
+      .then(result => {
+        return result.json()})
+    
+      
+
+      .then(countryName => this.setState({
+        countryName: countryName
+      }))
          
-      axios.get(api)
+      // axios.get(api)
 
-      .then((result) => {
-          let countryDisplay = result.data.Countries;
+      // .then((result) => {
+      //     let countryDisplay = result.data.Countries;
 
-          console.log('Country info displayed: ', countryDisplay)
+      //     console.log('Country info displayed: ', countryDisplay)
 
-          //how to set to if selection in drop list === this setState country then to render modal and submission of form
-          this.setState({
-              country: countryDisplay
-          })
-      })
+      //     //how to set to if selection in drop list === this setState country then to render modal and submission of form
+      //     this.setState({
+      //         country: countryDisplay
+      //     })
+      // })
     
 
     }
@@ -127,9 +137,9 @@ export default class LandingPage extends Component {
 
                   {/* Drop down list of countries to select from here-- Completed*/}
                   <p>Select Home Country:
-                  <select>
-                    { this.state.country.map(Country => <option value={Country.value}></option>)}
-                  </select>
+                  {/* <select>
+                    { this.state.countryName.map(country => <option value="country.value">{country.countryName}</option>)}
+                  </select> */}
                   </p>
 
 

@@ -92,10 +92,7 @@ export default class LandingPage extends Component {
         return result.json()})
     
       //may have to use array.concat method? will need .map 
-
-      .then(countryName => this.setState({
-        countryName: countryName
-      }))
+      
          
       // axios.get(api)
 

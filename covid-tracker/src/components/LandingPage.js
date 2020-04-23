@@ -2,48 +2,45 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
-
 export default class LandingPage extends Component {
+    
+   state = {
 
-    state = {
         country: ""
+
     }
 
-    componentDidMount() {
-        const api = "https://api.covid19api.com/summary";
-
+    constructor(props) {
+        super(props);
         
-        //need to link this get request to drop down menu submission to render user to information page based on home country they selected in form. 
-      axios.get(api)
-    
-        .then((result) => {
-            const initialSubmit = result.data.map((data) => {
+        const api = "https://api.covid19api.com/summary"
+         // this .get method will always pull from api url from wineLink variable and the parameter of ('/') to reference the main path (main API url information)
+         axios.get(api)
 
-            });
-
-            console.log('Country default is', initialSubmit)
-
-            this.setState({
-                country: initialSubmit
-            })
-        
-    })
-    
-        .catch((err) => {
-
-        console.log('Error has been computed', err)
-
-    });
+         .then((result) => {
+             const countryDisplay = result.data.Countries;
  
+             console.log('Country info displayed: ', countryDisplay)
+ 
+             //how to set to if selection in drop list === this setState country then to render modal and submission of form
+            //  this.setState({
+            //      country: countryDisplay
+            //  })
+         })
+ 
+         
+         //need to link this get request to drop down menu submission to render user to information page based on home country they selected in form. 
+        
+
+    }
 
 
 
 
 
+    componentDidMount() {
 
-
-
-
+    
 
 
 
@@ -72,13 +69,13 @@ export default class LandingPage extends Component {
                     <input type="text" email="email" />
                   </label>
 
-                  {/* Drop down list of countries to select from here */}
+                  {/* Drop down list of countries to select from here-- Completed*/}
                   <p>Select Home Country:
                   <select>
-                    <option value="option1">1</option>
-                    <option value="option2">2</option>
-                    <option selected value="option3">3</option>
-                    <option value="option4">4</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
                   </select>
                   </p>
 
@@ -88,4 +85,7 @@ export default class LandingPage extends Component {
             </div>
         )
     }
+  
+
+
 }

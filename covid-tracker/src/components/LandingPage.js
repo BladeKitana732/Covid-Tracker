@@ -64,6 +64,38 @@ export default class LandingPage extends Component {
     }
 
 
+    handleBirth = (event) => {
+      event.preventDefault();
+      //the event is the change that will be passed through
+      console.log(event.target.value);
+     
+      this.setState({
+        birthday: event.target.value
+      })
+
+    }
+
+
+    handleEmail = (event) => {
+      event.preventDefault();
+      //the event is the change that will be passed through
+      console.log(event.target.value);
+     
+      this.setState({
+        email: event.target.value
+      })
+
+    }
+
+
+
+
+
+
+
+
+
+
     componentDidMount() {
  
          
@@ -100,12 +132,12 @@ export default class LandingPage extends Component {
 
                   <label>
                     Birthday:
-                    <input type="text" birthday="birthday" value={this.state.birthday} />
+                    <input onChange= {this.handleBirth} type="text" birthday="birthday" value={this.state.birthday} />
                   </label>
 
                   <label>
                     Email:
-                    <input type="text" email="email" value={this.state.email}/>
+                    <input onChange= {this.handleEmail} type="text" email="email" value={this.state.email}/>
                   </label>
 
                   {/* Drop down list of countries to select from here-- Completed*/}

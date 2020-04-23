@@ -12,26 +12,29 @@ export default class LandingPage extends Component {
     componentDidMount() {
         const api = "https://api.covid19api.com/summary";
 
+        
         //need to link this get request to drop down menu submission to render user to information page based on home country they selected in form. 
-        axios.get(api)
+      axios.get(api)
     
-    .then((result) => {
-        const initialSubmit = result.data.Countries[235];
+        .then((result) => {
+            const initialSubmit = result.data.map((data) => {
 
-        console.log('Country default is', initialSubmit)
+            });
 
-        this.setState({
-            country: initialSubmit
-        })
+            console.log('Country default is', initialSubmit)
+
+            this.setState({
+                country: initialSubmit
+            })
         
     })
     
-    .catch((err) => {
+        .catch((err) => {
 
         console.log('Error has been computed', err)
 
     });
-
+ 
 
 
 
@@ -70,6 +73,12 @@ export default class LandingPage extends Component {
                   </label>
 
                   {/* Drop down list of countries to select from here */}
+                  <select>
+                    <option value="option1">1</option>
+                    <option value="option2">2</option>
+                    <option selected value="option3">3</option>
+                    <option value="option4">4</option>
+                  </select>
 
 
                     <input type="submit" value="Submit" />

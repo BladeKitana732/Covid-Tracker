@@ -1,17 +1,16 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+
 
 function InfoPage(props) {
     return (
         <div>
+            {/* dropbox option box here for user to check which country information they want to display */}
             
+
         </div>
     )
 }
 
-InfoPage.propTypes = {
-
-}
 
 export default InfoPage
 

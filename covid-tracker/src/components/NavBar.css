@@ -1,3 +1,7 @@
 nav .active {
     text-decoration: line-through;
 }
+
+ul li {
+    text-decoration: none;
+}

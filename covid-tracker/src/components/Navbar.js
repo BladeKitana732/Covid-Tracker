@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Navbar(props) {
     return(
-        <nav>
+        <nav className="red">
              <NavLink to="/" className="logo">COVID-Tracker</NavLink>
 
              <ul id="navLinks" >

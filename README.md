@@ -14,9 +14,9 @@ There should be 2 container components (stateful)
 
 There should be 5 presentational components (stateless)
 
-There should be 3 or more routes
+There should be 3 or more routes - Completed 
 
-The application must make use of react-router
+The application must make use of react-router - Completed
 
 Make use of async actions to send data to and receive data from a server
 
@@ -24,9 +24,9 @@ Your client-side application should handle the display of data with minimal data
 
 Uses CSS or styled components to style application
 
-Frontend uses Axios requests 
+Frontend uses Axios requests - Completed  
 
-App renders in browser
+App renders in browser - Completed 
 
 On project submission there should be 0 console.log() statements seen in the browser
 
@@ -91,6 +91,7 @@ https://scrimba.com/course/glearnreact
 
 https://javascript.info/promise-chaining //for fetch and nested .then promises 
 
+https://reacttraining.com/react-router/web/guides/quick-start //for react router and Navbar
 
 
 

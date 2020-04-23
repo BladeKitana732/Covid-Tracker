@@ -19,7 +19,6 @@ export default class LandingPage extends Component {
               birthday: "",
               email: "",
               country: "",
-              modalStatus: false //added for when user clicks submit it will turn to true
 
           }
         
@@ -88,21 +87,13 @@ export default class LandingPage extends Component {
     }
 
 
-
-
-
-
-
-
-
-
     componentDidMount() {
  
          
       axios.get(api)
 
       .then((result) => {
-          const countryDisplay = result.data.Countries;
+          const countryDisplay = result.data.Countries[200];
 
           console.log('Country info displayed: ', countryDisplay)
 
@@ -112,9 +103,6 @@ export default class LandingPage extends Component {
           })
       })
     
-
-
-
 
     }
     

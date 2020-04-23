@@ -99,10 +99,10 @@ export default class LandingPage extends Component {
           return {value: country}
         });
 
-        console.log(countryName);
+        // console.log(countryName);
 
         this.setState({
-          nameOfCountry: [{value: ""}]
+          nameOfCountry: [{value: ""}].concat(countryName)
         });
 
       })

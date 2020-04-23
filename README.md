@@ -89,7 +89,6 @@ https://www.udemy.com/course/react-js-from-the-beginning-w-redux-and-react-route
 
 https://scrimba.com/course/glearnreact
 
-https://www.youtube.com/watch?v=qwot-zf6gx4 //for drop down list
 
 https://javascript.info/promise-chaining //for fetch and nested .then promises 
 

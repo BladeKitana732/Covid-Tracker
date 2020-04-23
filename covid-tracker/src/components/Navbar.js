@@ -1,25 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 //we use the link component (internally) to ensure we do not render user to another html it will restart everything; so we use links to help attach the right component we want to display to user in VisualDOM 
 
 function Navbar(props) {
     return(
         <nav>
-             <Link to="/" className="logo">COVID-Tracker</Link>
+             <NavLink to="/" className="logo">COVID-Tracker</NavLink>
 
-             <ul id="navLinks">
+             <ul id="navLinks" >
 
-                <li><Link to="/Homepage">
+                <li><NavLink to="/Homepage">
                     Form page 
-                </Link></li>
+                </NavLink></li>
 
-                <li><Link to="/Covid-Tracker">
+                <li><NavLink to="/Covid-Tracker">
                     Covid Info
-                </Link></li>
+                </NavLink></li>
 
-                <li><Link to="/thirdRoute">
+                <li><NavLink to="/thirdRoute">
                     thirdRoute
-                </Link></li>
+                </NavLink></li>
 
              </ul>
         </nav>

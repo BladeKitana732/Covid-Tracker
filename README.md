@@ -91,7 +91,11 @@ https://scrimba.com/course/glearnreact
 
 https://javascript.info/promise-chaining //for fetch and nested .then promises 
 
-https://reacttraining.com/react-router/web/guides/quick-start //for react router and Navbar
+https://reacttraining.com/react-router/web/guides/quick-start //for react router and Navbar (1/2)
+
+https://reacttraining.com/react-router/web/api/NavLink/activeclassname-string //for react router and Navbar (2/2)
+
+
 
 
 

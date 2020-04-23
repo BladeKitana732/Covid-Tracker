@@ -9,7 +9,10 @@ function Navbar(props) {
 
              <ul id="navLinks" >
 
-                <li><NavLink to="/Homepage">
+                <li><NavLink to="/Homepage" activeStyle={{
+                    fontFamily: "fantasy",
+                    textDecoration: "none"
+                }}>
                     Form page 
                 </NavLink></li>
 

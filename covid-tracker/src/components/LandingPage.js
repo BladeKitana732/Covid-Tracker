@@ -10,12 +10,15 @@ export default class LandingPage extends Component {
 
    state = {
 
-        country: ""
+        country: "",
+        modalStatus: false //added for when user clicks submit it will turn to true
 
     }
 
     constructor(props) {
         super(props);
+
+
         
        
         
@@ -39,7 +42,11 @@ export default class LandingPage extends Component {
     }
 
 
-
+    handleSubmit = (event) => {
+      event.preventDefault();
+      console.log('Form has been handled!');
+      
+    }
 
 
     componentDidMount() {
@@ -70,7 +77,7 @@ export default class LandingPage extends Component {
             <div>
                 <h1>Homepage: This page will display form and image of rona</h1>
 
-                <form>
+                <form onSubmit= {this.handleSubmit}>
                   <label>
                     Name:
                     <input type="text" name="name" />
@@ -97,7 +104,7 @@ export default class LandingPage extends Component {
                   </p>
 
 
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="submit" />
                 </form>
             </div>
         )

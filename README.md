@@ -83,6 +83,13 @@ Anyone with access to internet who wants to see recent data regarding the virus.
 
 ![wireframe](./WF1.jpg)
 
+## Resources used 
+
+https://www.udemy.com/course/react-js-from-the-beginning-w-redux-and-react-router/learn/lecture/14662730#content
+
+https://scrimba.com/course/glearnreact
+
+
 
 
 

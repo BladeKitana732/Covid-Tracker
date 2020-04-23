@@ -53,7 +53,14 @@ export default class LandingPage extends Component {
 
     handleName = (event) => {
       event.preventDefault();
+      //the event is the change that will be passed through
       console.log(event.target.value);
+      //this makes a "change" in input box updating as each change is now being registered
+      this.setState({
+        name: event.target.value
+      })
+
+
     }
 
 

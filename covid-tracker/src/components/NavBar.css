@@ -2,6 +2,7 @@ nav .active {
     text-decoration: line-through;
 }
 
-ul li {
+.logo {
     text-decoration: none;
+    border: solid 2px black;
 }

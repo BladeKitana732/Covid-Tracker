@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 // const api = "https://api.covid19api.com/summary"
 
@@ -15,9 +15,8 @@ export default class LandingPage extends Component {
               name: "",
               birthday: "",
               email: "",
-              nameOfCountry: [],
-              selectedCountry: ""
-
+              nameOfCountry: []
+            
           };
         
        
@@ -87,42 +86,42 @@ export default class LandingPage extends Component {
 
     componentDidMount() {
       
-      fetch("https://api.covid19api.com/summary")
+      // fetch("https://api.covid19api.com/summary")
 
-      .then(result => {
-        return result.json()})
+      // .then(result => {
+      //   return result.json()})
     
       //may have to use array.concat method? will need .map 
-      .then(data => {
+      // .then(data => {
 
-        let countryName = data.map(country => {
-          return {value: country}
-        });
+      //   let countryName = data.map(country => {
+      //     return {value: country}
+      //   });
 
         // console.log(countryName);
 
-        this.setState({
-          nameOfCountry: [{value: ""}].concat(countryName)
-        });
+      //   this.setState({
+      //     nameOfCountry: [{value: ""}].concat(countryName)
+      //   });
 
-      })
-
-      .catch(error => {
-        console.log('Error has computed', error)
-      })
-         
-      // axios.get(api)
-
-      // .then((result) => {
-      //     let countryDisplay = result.data.Countries;
-
-      //     console.log('Country info displayed: ', countryDisplay)
-
-      //     //how to set to if selection in drop list === this setState country then to render modal and submission of form
-      //     this.setState({
-      //         country: countryDisplay
-      //     })
       // })
+
+      // .catch(error => {
+      //   console.log('Error has computed', error)
+      // })
+         
+      axios.get("https://api.covid19api.com/summary")
+
+      .then((result) => {
+          let countryDisplay = result.data.Countries;
+
+          console.log('Country info displayed: ', countryDisplay)
+
+          //how to set to if selection in drop list === this setState country then to render modal and submission of form
+          this.setState({
+              country: countryDisplay
+          })
+      })
     
 
     }

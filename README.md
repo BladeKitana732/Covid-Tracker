@@ -91,6 +91,8 @@ https://scrimba.com/course/glearnreact
 
 https://www.youtube.com/watch?v=qwot-zf6gx4 //for drop down list
 
+https://javascript.info/promise-chaining //for fetch and nested .then promises 
+
 
 
 

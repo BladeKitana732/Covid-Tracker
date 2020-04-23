@@ -91,8 +91,8 @@ export default class LandingPage extends Component {
       .then(result => {
         return result.json()})
     
+      //may have to use array.concat method? 
       
-
       .then(countryName => this.setState({
         countryName: countryName
       }))

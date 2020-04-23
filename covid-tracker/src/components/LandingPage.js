@@ -73,12 +73,14 @@ export default class LandingPage extends Component {
                   </label>
 
                   {/* Drop down list of countries to select from here */}
+                  <p>Select Home Country:
                   <select>
                     <option value="option1">1</option>
                     <option value="option2">2</option>
                     <option selected value="option3">3</option>
                     <option value="option4">4</option>
                   </select>
+                  </p>
 
 
                     <input type="submit" value="Submit" />

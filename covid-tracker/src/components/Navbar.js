@@ -11,16 +11,25 @@ function Navbar(props) {
 
                 <li><NavLink to="/Homepage" activeStyle={{
                     fontFamily: "fantasy",
-                    textDecoration: "none"
+                    textDecoration: "none",
+                    border: "solid 2px blue"
                 }}>
                     Form page 
                 </NavLink></li>
 
-                <li><NavLink to="/Covid-Tracker">
+                <li><NavLink to="/Covid-Tracker" activeStyle={{
+                    fontFamily: "cursive",
+                    textDecoration: "none",
+                    border: "solid 2px red"
+                }}>
                     Covid Info
                 </NavLink></li>
 
-                <li><NavLink to="/thirdRoute">
+                <li><NavLink to="/thirdRoute" activeStyle={{
+                    fontFamily: "aria",
+                    textDecoration: "none",
+                    border: "solid 2px gold"
+                }}>
                     thirdRoute
                 </NavLink></li>
 

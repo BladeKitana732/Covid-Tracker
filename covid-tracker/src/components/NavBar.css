@@ -1,8 +1,10 @@
-nav .active {
+/* nav .active {
     text-decoration: line-through;
 }
 
-.red {
+#navLinks {
     text-decoration: none;
     border: solid 2px black;
-}
+} */
+
+/* decided to inline style using resource: https://reacttraining.com/react-router/web/api/NavLink/activeclassname-string */

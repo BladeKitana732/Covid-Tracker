@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+const api = "https://api.covid19api.com/summary"
 
 export default class LandingPage extends Component {
+  
     
+
+
    state = {
 
         country: ""
@@ -13,20 +17,20 @@ export default class LandingPage extends Component {
     constructor(props) {
         super(props);
         
-        const api = "https://api.covid19api.com/summary"
+       
         
-         axios.get(api)
+        //  axios.get(api)
 
-         .then((result) => {
-             const countryDisplay = result.data.Countries;
+        //  .then((result) => {
+        //      const countryDisplay = result.data.Countries;
  
-             console.log('Country info displayed: ', countryDisplay)
+        //      console.log('Country info displayed: ', countryDisplay)
  
-             //how to set to if selection in drop list === this setState country then to render modal and submission of form
-            //  this.setState({
-            //      country: countryDisplay
-            //  })
-         })
+        //      //how to set to if selection in drop list === this setState country then to render modal and submission of form
+        //      this.setState({
+        //          country: countryDisplay
+        //      })
+        //  })
  
          
          //need to link this get request to drop down menu submission to render user to information page based on home country they selected in form. 
@@ -39,7 +43,20 @@ export default class LandingPage extends Component {
 
 
     componentDidMount() {
+ 
+         
+      axios.get(api)
 
+      .then((result) => {
+          const countryDisplay = result.data.Countries;
+
+          console.log('Country info displayed: ', countryDisplay)
+
+          //how to set to if selection in drop list === this setState country then to render modal and submission of form
+          this.setState({
+              country: countryDisplay
+          })
+      })
     
 
 

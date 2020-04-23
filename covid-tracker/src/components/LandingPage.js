@@ -15,9 +15,10 @@ export default class LandingPage extends Component {
               name: "",
               birthday: "",
               email: "",
-              countryName: [],
+              nameOfCountry: [],
+              selectedCountry: ""
 
-          }
+          };
         
        
         
@@ -92,7 +93,23 @@ export default class LandingPage extends Component {
         return result.json()})
     
       //may have to use array.concat method? will need .map 
-      
+      .then(data => {
+
+        let countryName = data.map(country => {
+          return {value: country}
+        });
+
+        console.log(countryName);
+
+        this.setState({
+          nameOfCountry: [{value: ""}]
+        });
+
+      })
+
+      .catch(error => {
+        console.log('Error has computed', error)
+      })
          
       // axios.get(api)
 

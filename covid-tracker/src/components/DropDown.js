@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import PropTest from './PropTest';
 
 export default class DropDown extends Component {
     constructor(props){
@@ -23,7 +24,7 @@ export default class DropDown extends Component {
   
             //how to set to if selection in drop list === this setState country then to render modal and submission of form
             this.setState({
-                country: data,
+                country: data.Countries,
 
             })
         })
@@ -34,21 +35,18 @@ export default class DropDown extends Component {
 
     render() {
 
-        const countryName= this.state.country.map((country, index) => {
-            return (
-                <div key= {index}>{country}}</div>
-            )
-        })
+        // const countryName= this.state.country.map((country, index) => {
+        //     return (
+        //         <div>country</div>
+        //     )
+        // })
 
-        console.log(countryName);
+        // console.log(countryName);
 
         return (
-         <select>
-            {/* <option value="option1">1</option>
-            <option value="option2">2</option>
-            <option selected value="option3">3</option>
-            <option value="option4">4</option> */}
-          </select>
+            <div>
+                <PropTest infoDisplay= { this.state.country }/>
+            </div>
         )
     }
 }

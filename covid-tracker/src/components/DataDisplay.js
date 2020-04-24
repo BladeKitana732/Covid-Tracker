@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import DropDown from './DropDown';
 
+import axois from 'axios';
+
+import PropTest from './PropTest';
 
 
-
-export default function DataDisplay(props) {
-
-    console.log(props)
-
-
-    return (
-        <div>
-               {/* <DropDown />   */}
-             
-        </div>
-    )
+export default class DataDisplay extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
+

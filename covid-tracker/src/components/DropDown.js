@@ -6,13 +6,7 @@ export default class DropDown extends Component {
         super(props)
 
         this.state = {
-            country: "",
-            newConfirmed: "",
-            totalConfirmed: "",
-            newDeaths: "",
-            totalDeaths: "",
-            newRecovered: "",
-            totalRecovered: ""
+            country: ""
         }
     }
 
@@ -23,13 +17,14 @@ export default class DropDown extends Component {
         axios.get(currentInfo)
   
         .then((response) => {
-            let data = response.data.Countries;
+            let data = response.data.Countries.map();
   
             console.log(data)
   
             //how to set to if selection in drop list === this setState country then to render modal and submission of form
             this.setState({
-                country: data
+                country: this.state.country,
+
             })
         })
       

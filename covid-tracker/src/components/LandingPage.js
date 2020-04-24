@@ -90,7 +90,7 @@ export default class LandingPage extends Component {
       axios.get(currentInfo)
 
       .then((response) => {
-          let data = response.data;
+          let data = response.data.Countries;
 
           console.log(data)
 

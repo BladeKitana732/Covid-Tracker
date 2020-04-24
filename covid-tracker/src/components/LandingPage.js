@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-// const api = "https://api.covid19api.com/summary"
-
 export default class LandingPage extends Component {
   
   
@@ -15,27 +13,9 @@ export default class LandingPage extends Component {
               name: "",
               birthday: "",
               email: "",
-              nameOfCountry: []
             
           };
         
-       
-        
-        //  axios.get(api)
-
-        //  .then((result) => {
-        //      const countryDisplay = result.data.Countries;
- 
-        //      console.log('Country info displayed: ', countryDisplay)
- 
-        //      //how to set to if selection in drop list === this setState country then to render modal and submission of form
-        //      this.setState({
-        //          country: countryDisplay
-        //      })
-        //  })
- 
-         
-         //need to link this get request to drop down menu submission to render user to information page based on home country they selected in form. 
         
 
     }
@@ -95,9 +75,9 @@ export default class LandingPage extends Component {
           console.log(data)
 
           //how to set to if selection in drop list === this setState country then to render modal and submission of form
-          // this.setState({
-          //     country: countryDisplay
-          // })
+          this.setState({
+              country: data
+          })
       })
     
 
@@ -105,6 +85,22 @@ export default class LandingPage extends Component {
     
 
     render() {
+  
+      // const dropDownListOptions = this.state.country.map((name) => {
+      //   return (
+      //     <div>
+      //     <p>Select Home Country:
+      //     <select>
+      //      <option></option>
+      //     </select>
+      //     </p>
+      //     </div>
+
+      //   )
+      // })
+
+
+
         return (
             <div>
                 <h1>Homepage: This page will display form and image of rona</h1>
@@ -126,14 +122,15 @@ export default class LandingPage extends Component {
                   </label>
 
                   {/* Drop down list of countries to select from here-- Completed*/}
-                  <p>Select Home Country:
-                  {/* <select>
-                    { this.state.countryName.map(country => <option value="country.value">{country.countryName}</option>)}
-                  </select> */}
+                  
+                  {/* <p>Select Home Country:
+                  <select>
+                   
+                  </select>
                   </p>
 
 
-                    <input type="submit" value="submit" />
+                    <input type="submit" value="submit" /> */}
                 </form>
             </div>
         )

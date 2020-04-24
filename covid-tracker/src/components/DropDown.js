@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-export default function DropDown() {
-    return (
-        <div>
-            <h1>Sanity check! Drop down component</h1>
-        </div>
-    )
+export default class DropDown extends Component {
+    constructor(){
+        super()
+
+        this.state = {
+            country: "",
+            newConfirmed: "",
+            totalConfirmed: "",
+            newDeaths: "",
+            totalDeaths: "",
+            newRecovered: "",
+            totalRecovered: ""
+        }
+    }
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
+

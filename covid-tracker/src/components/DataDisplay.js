@@ -12,7 +12,7 @@ import PropTest from './PropTest';
 //creating a api variable as base to be able to pull information from the separate objects in unison
 
 const totalInfo = axios.create({
-    baseURL: ""
+    baseURL: "https://api.covid19api.com/summary"
 })
 
 
@@ -24,6 +24,10 @@ export default class DataDisplay extends Component {
 
     }
 
+
+    constructor(props) {
+        super(props);
+    }
     // componentDidMount() {
 
     //     axios.get(wineLink)

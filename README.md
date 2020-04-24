@@ -97,6 +97,8 @@ https://reacttraining.com/react-router/web/api/NavLink/activeclassname-string //
 
 https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/ //resource for understanding arrow functions and how to utilize them 
 
+https://www.w3schools.com/react/react_css.asp //styling
+
 
 
 

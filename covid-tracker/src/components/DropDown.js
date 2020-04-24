@@ -24,7 +24,7 @@ export default class DropDown extends Component {
   
             //how to set to if selection in drop list === this setState country then to render modal and submission of form
             this.setState({
-                country: data.Countries,
+                country: data,
 
             })
         })
@@ -40,8 +40,6 @@ export default class DropDown extends Component {
         //         <div>country</div>
         //     )
         // })
-
-        // console.log(countryName);
 
         return (
             <div>

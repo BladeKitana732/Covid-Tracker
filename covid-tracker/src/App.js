@@ -14,8 +14,8 @@ export default function App() {
       <Router>
         <Navbar />
         <Route exact path="/Homepage" component= {LandingPage}/>
-        <Route path="/Covid-Tracker" component= {InfoPage}/>
-        <Route path="/thirdRoute" component= {DropDown}/>
+        <Route exact path="/Covid-Info" component= {InfoPage}/>
+        <Route exact path="/Covid-Tracker" component= {DropDown}/>
       </Router>
     </div>
   )

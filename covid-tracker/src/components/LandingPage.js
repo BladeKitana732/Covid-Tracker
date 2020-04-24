@@ -86,30 +86,7 @@ export default class LandingPage extends Component {
 
     componentDidMount() {
       
-      // fetch("https://api.covid19api.com/summary")
-
-      // .then(result => {
-      //   return result.json()})
-    
-      //may have to use array.concat method? will need .map 
-      // .then(data => {
-
-      //   let countryName = data.map(country => {
-      //     return {value: country}
-      //   });
-
-        // console.log(countryName);
-
-      //   this.setState({
-      //     nameOfCountry: [{value: ""}].concat(countryName)
-      //   });
-
-      // })
-
-      // .catch(error => {
-      //   console.log('Error has computed', error)
-      // })
-         
+      
       axios.get("https://api.covid19api.com/summary")
 
       .then((result) => {

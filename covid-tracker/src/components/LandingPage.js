@@ -90,6 +90,7 @@ export default class LandingPage extends Component {
                     <input onChange= {this.handleEmail} type="text" email="email" value={this.state.email}/>
                   </label>
 
+                  <label>Select Home Country: </label>
                   <DropDown />
 
                   <input type="submit" value="submit" />

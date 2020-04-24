@@ -6,7 +6,7 @@ export default class DropDown extends Component {
         super(props)
 
         this.state = {
-            country: ""
+            country: []
         }
     }
 
@@ -23,7 +23,7 @@ export default class DropDown extends Component {
   
             //how to set to if selection in drop list === this setState country then to render modal and submission of form
             this.setState({
-                country: this.state.country,
+                country: data,
 
             })
         })
@@ -33,6 +33,15 @@ export default class DropDown extends Component {
 
 
     render() {
+
+        const countryName= this.state.country.map((country, index) => {
+            return (
+                <div key= {index}>{country.country}}</div>
+            )
+        })
+
+        console.log(countryName);
+
         return (
          <select>
             <option value="option1">1</option>

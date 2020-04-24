@@ -35,11 +35,6 @@ export default class DropDown extends Component {
 
     render() {
 
-        // const countryName= this.state.country.map((country, index) => {
-        //     return (
-        //         <div>country</div>
-        //     )
-        // })
 
         return (
             <div>

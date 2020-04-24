@@ -5,11 +5,9 @@ function PropTest(props) {
     return(
         <select>
 
-            
             {
                 props.infoDisplay.map(country => <option>{country.Country}
                 </option>)
-
             }
             
         </select>

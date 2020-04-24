@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import DropDown from './DropDown';
-// import axios from 'axios';
 
 export default class LandingPage extends Component {
   

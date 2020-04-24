@@ -38,6 +38,7 @@ export default class DropDown extends Component {
 
         return (
             <div>
+                <label>Select Home Country: </label>
                 <PropTest infoDisplay= { this.state.country }/>
             </div>
         )

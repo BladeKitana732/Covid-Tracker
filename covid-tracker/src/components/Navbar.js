@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Navbar(props) {
     return(
-        <nav className="red">
+        <nav className="navBar">
              <NavLink to="/Homepage" className="logo">COVID-Tracker</NavLink>
 
              <ul id="navLinks" >
@@ -28,9 +28,9 @@ function Navbar(props) {
                 <li><NavLink to="/Covid-Tracker" activeStyle={{
                     fontFamily: "aria",
                     textDecoration: "none",
-                    border: "solid 2px gold"
+                    border: "solid 2px gold",
                 }}>
-                    thirdRoute
+                    Information Tracker
                 </NavLink></li>
 
                 {/* <li><NavLink to="/TestingCode" activeStyle={{

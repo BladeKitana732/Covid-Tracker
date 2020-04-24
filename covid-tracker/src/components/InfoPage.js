@@ -9,7 +9,12 @@ export default function InfoPage() {
                 <li>There will be a drop down list with names of Countries</li>
                 <li>Country selection will display the following information for selected Country: </li>
                 <ol>
-                    <li></li>
+                    <li>New confirmed cases:</li>
+                    <li>Total confirmed cases:</li>
+                    <li>New death cases:</li>
+                    <li>Total death count:</li>
+                    <li>Newly recovered today:</li>
+                    <li>Total recovered count:</li>
                 </ol>
             </ul>
         </div>

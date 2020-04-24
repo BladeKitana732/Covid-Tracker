@@ -2,15 +2,15 @@
 React project (given 04/21 due 04/24)
 
 ## Minimum Requirements 
-Project must be approved by Instructor approval at the start of project week
+Project must be approved by Instructor approval at the start of project week - Completed
 
-Project code is pushed to a public Git repository
+Project code is pushed to a public Git repository - Completed 
 
-The code should be written in ES6 as much as possible
+The code should be written in ES6 as much as possible - Completed 
 
 Use the create-react-app generator to start your project. - Completed 
 
-There should be 2 container components (stateful)
+There should be 2 container components (stateful) - Completed 
 
 There should be 5 presentational components (stateless)
 
@@ -20,7 +20,7 @@ The application must make use of react-router - Completed
 
 Make use of async actions to send data to and receive data from a server
 
-Your client-side application should handle the display of data with minimal data manipulation
+Your client-side application should handle the display of data with minimal data manipulation 
 
 Uses CSS or styled components to style application
 
@@ -33,7 +33,7 @@ On project submission there should be 0 console.log() statements seen in the bro
 Be written with kebab-case CSS class names (e.g. this-is-the-class-name) //simply replacing spaces with dashes; resource(s): https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841
 
 Be written with semantic, camelCase JavaScript variable names
-pseudocode file in root of project repository
+pseudocode file in root of project repository - Completed 
 
 Has readme.md file at the root of repository - Completed 
 

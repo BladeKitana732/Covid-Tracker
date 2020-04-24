@@ -91,7 +91,8 @@ export default class LandingPage extends Component {
                   </label>
 
                   <DropDown />
-        
+
+                  <input type="submit" value="submit" />
                 </form>
             </div>
         )

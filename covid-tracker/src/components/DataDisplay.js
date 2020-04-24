@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function DataDisplay(props) {
 
-    console.log(props.infoDisplay)
+    console.log(props)
 
 
     return (

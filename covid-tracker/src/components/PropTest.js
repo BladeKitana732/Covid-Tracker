@@ -5,12 +5,13 @@ function PropTest(props) {
     return(
         <select>
 
-            <option>
+            
             {
-                props.infoDisplay.map(country => country.Country)
+                props.infoDisplay.map(country => <option>{country.Country}
+                </option>)
 
             }
-            </option>
+            
         </select>
     
     )

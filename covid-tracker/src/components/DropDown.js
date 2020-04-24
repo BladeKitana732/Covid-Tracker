@@ -17,7 +17,7 @@ export default class DropDown extends Component {
         axios.get(currentInfo)
   
         .then((response) => {
-            let data = response.data.Countries.map();
+            let data = response.data.Countries;
   
             console.log(data)
   
@@ -34,9 +34,12 @@ export default class DropDown extends Component {
 
     render() {
         return (
-            <div>
-                
-            </div>
+         <select>
+            <option value="option1">1</option>
+            <option value="option2">2</option>
+            <option selected value="option3">3</option>
+            <option value="option4">4</option>
+          </select>
         )
     }
 }

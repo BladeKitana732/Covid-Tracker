@@ -11,12 +11,43 @@ import PropTest from './PropTest';
 
 //creating a api variable as base to be able to pull information from the separate objects in unison
 
-let wineLink = axios.create({
-    baseURL: "http://myapi-profstream.herokuapp.com/api/2f49a6/wines"
+const totalInfo = axios.create({
+    baseURL: ""
 })
 
 
 export default class DataDisplay extends Component {
+
+    state = {
+        
+        key1: []
+
+    }
+
+    // componentDidMount() {
+
+    //     axios.get(wineLink)
+    
+    //     .then((result) => {
+    //         const wines = result.data;
+
+    //         console.log(wines);
+    
+    //         this.setState({
+    //             wine: result.data
+    //         });
+            
+    //     })
+
+    //     .catch((err) => {
+
+    //         console.log('Error has been computed', err)
+    
+    //     });
+
+
+    // }
+
     render() {
         return (
             <div>

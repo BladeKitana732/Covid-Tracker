@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
 import InfoPage from './components/InfoPage';
 import DropDown from './components/DropDown';
+import PropTest from './components/PropTest';
 
 
 export default function App() {

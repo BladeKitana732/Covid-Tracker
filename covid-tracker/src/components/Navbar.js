@@ -33,6 +33,14 @@ function Navbar(props) {
                     thirdRoute
                 </NavLink></li>
 
+                <li><NavLink to="/TestingCode" activeStyle={{
+                    fontFamily: "cursive",
+                    textDecoration: "none",
+                    border: "solid 2px purple"
+                }}>
+                    TestingCode
+                </NavLink></li>
+
              </ul>
         </nav>
     )

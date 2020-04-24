@@ -36,7 +36,7 @@ export default class DropDown extends Component {
 
         const countryName= this.state.country.map((country, index) => {
             return (
-                <div key= {index}>{country.country}}</div>
+                <div key= {index}>{country}}</div>
             )
         })
 
@@ -44,10 +44,10 @@ export default class DropDown extends Component {
 
         return (
          <select>
-            <option value="option1">1</option>
+            {/* <option value="option1">1</option>
             <option value="option2">2</option>
             <option selected value="option3">3</option>
-            <option value="option4">4</option>
+            <option value="option4">4</option> */}
           </select>
         )
     }

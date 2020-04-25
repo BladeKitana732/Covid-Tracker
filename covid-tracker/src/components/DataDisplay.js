@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DropDown from './DropDown';
+// import DropDown from './DropDown';
 import DomDisplay from './DomDisplay';
 import axios from 'axios';
 
@@ -24,7 +24,7 @@ export default class DataDisplay extends Component {
 
             this.state = {
                 
-                confirmed: ""
+                confirmed: []
       
             }
     }
@@ -38,10 +38,9 @@ export default class DataDisplay extends Component {
     axios.get(fullData)
 
     .then((response) => {
-        const confirmed = response.data.Country;
+        const confirmed = response.data.Countries;
 
-        console.log(confirmed)
-    })
+        console.log(confirmed)    })
 
 
 
@@ -51,7 +50,7 @@ export default class DataDisplay extends Component {
         return (
             <div>
                 <h1>Sanity Check</h1>
-               <DropDown />
+               {/* <DropDown /> */}
                <DomDisplay totals= {this.state.confirmed } />
             </div>
         )

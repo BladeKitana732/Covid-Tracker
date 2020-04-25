@@ -47,6 +47,7 @@ export default class DataDisplay extends Component {
     render() {
         return (
             <div>
+            {/* Need an if/else statement that will check for if drop down list option selected = country name, then render that countries info only */}
                 <h1>Sanity Check</h1>
                <DropDown />
                <DomDisplay totals= {this.state.confirmed } />

@@ -24,7 +24,13 @@ export default class DataDisplay extends Component {
 
             this.state = {
                 
-                confirmed: []
+                confirmed: [
+                    {
+                        TotalConfirmed: "",
+                        TotalDeaths: "",
+                        TotalRecovered: ""
+                    }
+                ]
       
             }
     }

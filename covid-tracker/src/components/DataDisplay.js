@@ -24,9 +24,7 @@ export default class DataDisplay extends Component {
 
             this.state = {
                 
-                confirmed: "",
-                deaths: "",
-                recovered: ""
+                confirmed: ""
       
             }
     }
@@ -40,7 +38,7 @@ export default class DataDisplay extends Component {
     axios.get(fullData)
 
     .then((response) => {
-        const confirmed = response.data;
+        const confirmed = response.data.Country;
 
         console.log(confirmed)
     })
@@ -54,7 +52,7 @@ export default class DataDisplay extends Component {
             <div>
                 <h1>Sanity Check</h1>
                <DropDown />
-               <DomDisplay totals= {this.state.fullData} />
+               <DomDisplay totals= {this.state.confirmed } />
             </div>
         )
     }

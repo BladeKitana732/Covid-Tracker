@@ -42,7 +42,7 @@ export default class DataDisplay extends Component {
     .then((response) => {
         const confirmed = response.data;
 
-        console.log(confirmed.totals)
+        console.log(confirmed)
     })
 
 

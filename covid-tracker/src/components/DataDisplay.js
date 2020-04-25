@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-// import DropDown from './DropDown';
+import DropDown from './DropDown';
 
 import axios from 'axios';
 
-import PropTest from './PropTest';
 
 
 
@@ -53,7 +52,7 @@ export default class DataDisplay extends Component {
         return (
             <div>
                 <h1>Sanity Check</h1>
-                {/* <PropTest dataDisplay = { this.state.fullData }/> */}
+               <DropDown />
             </div>
         )
     }

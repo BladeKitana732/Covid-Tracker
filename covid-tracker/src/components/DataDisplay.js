@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 // import DropDown from './DropDown';
 
-import axois from 'axios';
+import axios from 'axios';
 
 import PropTest from './PropTest';
+
 
 
 //resource found: https://www.youtube.com/watch?v=12l6lkW6JhE&t=564s - regarding the axios.create()
@@ -11,53 +12,51 @@ import PropTest from './PropTest';
 
 //creating a api variable as base to be able to pull information from the separate objects in unison
 
-const totalInfo = axios.create({
-    baseURL: "https://api.covid19api.com/summary"
-})
+
 
 
 export default class DataDisplay extends Component {
 
-    state = {
-        
-        key1: []
-
-    }
 
 
     constructor(props) {
         super(props);
+
+
+            this.state = {
+                
+                fullData: []
+
+      
+            }
     }
-    // componentDidMount() {
-
-    //     axios.get(wineLink)
-    
-    //     .then((result) => {
-    //         const wines = result.data;
-
-    //         console.log(wines);
-    
-    //         this.setState({
-    //             wine: result.data
-    //         });
-            
-    //     })
-
-    //     .catch((err) => {
-
-    //         console.log('Error has been computed', err)
-    
-    //     });
 
 
-    // }
+
+    componentDidMount() {
+
+    const  fullData = "https://api.covid19api.com/summary";
+
+    axios.get(fullData)
+
+    .then((response) => {
+        const confirmed = response.data;
+
+        console.log(confirmed)
+    })
+
+
+
+    }
 
     render() {
         return (
             <div>
-                
+                <h1>Sanity Check</h1>
+                <PropTest dataDisplay = { this.state.fullData }/>
             </div>
         )
     }
 }
+
 

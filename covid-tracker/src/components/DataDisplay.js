@@ -53,7 +53,7 @@ export default class DataDisplay extends Component {
         return (
             <div>
                 <h1>Sanity Check</h1>
-                <PropTest dataDisplay = { this.state.fullData }/>
+                {/* <PropTest dataDisplay = { this.state.fullData }/> */}
             </div>
         )
     }
